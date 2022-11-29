@@ -43,7 +43,7 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('assets/branch.mtl', null, (materials) => {
+    objLoader.loadMtl('assets/branchb.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
       objLoader.load('assets/branchb.obj', (event) => {
         const root = event.detail.loaderRootNode;
