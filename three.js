@@ -45,9 +45,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('assets/3shell.mtl', null, (materials) => {
+    objLoader.loadMtl('assets/cabinet.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('assets/cabinet.obj', (event) => {
+      objLoader.load('assets/Cabinet.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
