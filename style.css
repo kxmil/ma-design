@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+container{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+container::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+  z-index: 10;
+}
+
+ul{
+  z-index: 100;
+  position: absolute;
+  width: 10vw;
+  margin-top: 30vh;
+}
+
+canvas{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}

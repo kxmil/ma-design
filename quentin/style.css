@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header img{
+  width: 30%;
+  height: fit-content;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  top: 0;
+}
+
+main{
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+#container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#container div:first-child{
+  width: 30%;
+}
+
+#container div:last-child{
+  margin-top: 60vh;
+  width: 65%;
+}
+
+#container div img{
+  width: 100%;
+}
+
+#fadeObject1{
+  opacity: 0;
+}
+
+video{
+  width: 100%;
+}
+
+.itw{
+  font-style: italic;
+}
+
+canvas{
+  height: 80vh;
+  width: 30%;
+}
