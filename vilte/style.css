@@ -60,4 +60,6 @@ video{
 a{
   font-size: 1.5em;
   color: #000;
+  position: absolute;
+  z-index: 100;
 }
