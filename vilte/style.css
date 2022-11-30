@@ -56,3 +56,8 @@ video{
 .itw{
   font-style: italic;
 }
+
+a{
+  font-size: 1.5em;
+  color: #000;
+}
