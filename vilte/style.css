@@ -63,3 +63,14 @@ a{
   position: absolute;
   z-index: 100;
 }
+
+.proto{
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  margin-top: 1rem !important;
+}
+
+.proto img{
+  width: calc((100% - 3rem)/4) !important;
+}

@@ -29,3 +29,21 @@ document.addEventListener('scroll', (e) => {
     ticking = true;
   }
 });
+
+
+var images = [];
+function preload() {
+    for (var i = 0; i < 7; i++) {
+      let url = "assets/t";
+      images[i] = new Image();
+      if (i === 0){
+        url += ".png"
+        images[i].src = url;
+      } else {
+        url += i + ".png"
+        images[i].src = url;
+      }
+    }
+}
+
+preload()
