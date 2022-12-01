@@ -14,6 +14,7 @@ function doSomething(scrollPos) {
   } else {
     fadeObject2.src = "assets/t" + Math.ceil(scrollPos/250) + ".png";
   }
+  fadeObject2.style.opacity = 1 - ((scrollPos / document.body.offsetHeight) * 1.5);
   fadeObject3.style.opacity = 1 - ((scrollPos / document.body.offsetHeight) * 2);
 }
 
