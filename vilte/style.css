@@ -9,6 +9,10 @@ header img{
   height: 60vh;
 }
 
+header img:first-child{
+  height: fit-content;
+}
+
 header{
   display: flex;
   flex-direction: row;
