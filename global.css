@@ -4,3 +4,21 @@ body{
   font-family: 'Darker Grotesque', sans-serif;;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 800px) {
+  header, #container {
+    flex-direction: column;
+  }
+
+  #container div{
+    width: 100% !important;
+  }
+
+  #container div:last-child{
+    margin-top: 10vh !important;
+  }
+
+  header img{
+    width: 40% !important;
+  }
+}
