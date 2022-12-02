@@ -1,0 +1,99 @@
+<html lang="en"><head>
+  <title>MA Design Cabinets | MA Design</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../global.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+  <header>
+    <!-- <img id="fadeObject1" src="assets/mold.png" />
+    <img id="fadeObject2" src="assets/archive2.png" /> -->
+  </header>
+  <main>
+    <h1>MA DESIGN</h1>
+      <div id="container">
+        <div>
+          <p>The MA Design: Explorations &amp; Translations brings together multiple practices:
+            design, media studies, and sciences. Using the dynamic landscapes and industries
+            of Iceland as an experimental ground,the student cohort develops unique
+            interdisciplinary voices in the design field. In parallel with thorough research
+            mediated by a Thesis and collective publications, the students materialise and
+            manifest design proposals through a range of media such as: text, video works, web
+            based media and XR. Using a combination of applied and narrative design tools, the
+            emphasis is on critical thinking and the student´s authorship of their project.</p>
+        </div>
+        <div>
+          <!-- <img src="assets/archive.png"/> -->
+        </div>
+      </div>
+  </main>
+  <!-- <script src="scroll.js"></script> -->
+  <style>
+  #overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:#fff;
+    transition: 1s 0.4s;
+  }
+  #progress{
+    height:1px;
+    background:#000;
+    position:absolute;
+    width:0;
+    top:50%;
+  }
+  #progstat{
+    font-size:0.7em;
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    text-align:center;
+    color:#000;
+  }
+  </style>
+  <script>
+  ;(function(){
+    function id(v){return document.getElementById(v); }
+    function loadbar() {
+      var ovrl = id("overlay"),
+          prog = id("progress"),
+          stat = id("progstat"),
+          img = document.images,
+          c = 0;
+          tot = img.length;
+
+      function imgLoaded(){
+        c += 1;
+        var perc = ((100/tot*c) << 0) +"%";
+        prog.style.width = perc;
+        stat.innerHTML = "Loading "+ perc;
+        if(c===tot) return doneLoading();
+      }
+      function doneLoading(){
+        ovrl.style.opacity = 0;
+        setTimeout(function(){
+          ovrl.style.display = "none";
+        }, 1200);
+      }
+      for(var i=0; i<tot; i++) {
+        var tImg     = new Image();
+        tImg.onload  = imgLoaded;
+        tImg.onerror = imgLoaded;
+        tImg.src     = img[i].src;
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadbar, false);
+  }());
+  </script>
+</body>
+</html>
