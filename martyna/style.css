@@ -56,9 +56,15 @@ video{
 
 audio{
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .itw{
   font-style: italic;
+}
+
+span{
+  width: 100%;
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
 }
