@@ -22,6 +22,8 @@ header{
 
 header a{
   width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 header a img{

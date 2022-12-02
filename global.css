@@ -26,6 +26,10 @@ body{
     width: 40% !important;
   }
 
+  header a img{
+    width: 100% !important;
+  }
+
   p{
     font-size: 2rem;
   }
