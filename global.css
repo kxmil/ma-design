@@ -15,7 +15,11 @@ body{
   }
 
   #container div:last-child{
-    margin-top: 10vh !important;
+    margin-top: 1rem;
+  }
+
+  #container div:first-child{
+    margin-bottom: 10vh;
   }
 
   header img{
@@ -24,5 +28,9 @@ body{
 
   p{
     font-size: 2rem;
+  }
+
+  canvas{
+    width: 100%;
   }
 }
