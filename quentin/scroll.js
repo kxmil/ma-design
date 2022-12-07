@@ -1,14 +1,20 @@
-var fadeObject1 = document.querySelector('#fadeObject1'),
-fadeObject2 = document.querySelector('#fadeObject2'),
-fadeObject3 = document.querySelector('#fadeObject3');
+var fadeObject1 = document.querySelector('#fadeObject1');
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
 function doSomething(scrollPos) {
-  fadeObject1.style.opacity = ((scrollPos / document.body.offsetHeight) * 2);
-  fadeObject2.style.opacity = 1 - ((scrollPos / document.body.offsetHeight) * 20);
-  fadeObject3.style.opacity = 1 - ((scrollPos / document.body.offsetHeight) * 5);
+  if (Math.ceil(scrollPos/12) < 2){
+    fadeObject1.src = "assets/animation/001.png";
+  } else if (Math.ceil(scrollPos/12) < 10){
+    fadeObject1.src = "assets/animation/00" + Math.ceil(scrollPos/12) + ".png";
+  } else if (Math.ceil(scrollPos/12) < 100){
+    fadeObject1.src = "assets/animation/0" + Math.ceil(scrollPos/12) + ".png";
+  } else if (Math.ceil(scrollPos/12) < 500){
+    fadeObject1.src = "assets/animation/" + Math.ceil(scrollPos/12) + ".png";
+  } else {
+    fadeObject1.src = "assets/animation/500.png";
+  }
 }
 
 document.addEventListener('scroll', (e) => {
