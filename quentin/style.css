@@ -60,3 +60,7 @@ canvas{
   height: 80vh;
   width: 30%;
 }
+
+#preloader{
+  display: none;
+}
